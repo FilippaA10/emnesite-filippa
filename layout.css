@@ -1,0 +1,302 @@
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+main {
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+/*********Galleri********/
+
+.grid_galleri {
+  /* Mobil */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+
+  img {
+    margin: 0;
+    padding: 0;
+    align-self: stretch;
+    object-fit: cover;
+  }
+
+  .img1,
+  .img4 {
+    grid-column: span 2;
+  }
+  .img5,
+  .img6,
+  .img7,
+  .img8 {
+    grid-column: span 1;
+  }
+
+  @media (width > 800px) {
+    /* desktop */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    .img1 {
+      grid-row: span 2;
+    }
+    .img5 {
+      grid-column: span 1;
+    }
+
+    .img6 {
+      grid-column: span 1;
+    }
+  }
+}
+
+@media (width > 800px) {
+  .grid_1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+
+  .flex_col {
+    display: flex;
+    flex-direction: column;
+    :last-child {
+      margin-top: auto;
+    }
+  }
+}
+
+/********footer*********/
+
+.grid-footer {
+  @media (width > 800px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
+
+/********priser*******/
+.produkt {
+  position: relative;
+  width: 100%;
+}
+
+.stribe {
+  width: 100%;
+  display: block;
+}
+
+.kvittering {
+  position: absolute;
+  width: 50%;
+  top: 10%;
+  right: 40%;
+  height: auto;
+}
+
+.knap {
+  position: absolute;
+  top: 80%;
+  left: 80%;
+  transform: translateX(-50%);
+  z-index: 2;
+
+  background-color: rgb(238, 181, 226);
+  color: rgb(102, 9, 9);
+  font-weight: 500;
+  padding: 20px 40px;
+  text-decoration: none;
+}
+
+/*******forside******/
+
+.gridforside {
+  @media (width > 800px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
+
+.gridforside {
+  @media (width < 800px) {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+
+    p {
+      font-size: small;
+      text-align: start;
+    }
+
+    video {
+      height: 300px;
+      align-self: center;
+    }
+  }
+}
+
+.logotekst {
+  @media (width > 800px) {
+    margin-right: auto;
+  }
+}
+
+footer {
+  @media (width > 800px) {
+    margin-right: auto;
+  }
+}
+
+.adresse {
+  @media (width > 800px) {
+    margin-right: auto;
+  }
+}
+
+.test1 {
+  footer {
+    background-color: #c3d7f7;
+    width: 100%;
+  }
+
+  /* Øverste del */
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 25px 55px 25px;
+    border-bottom: 1px solid #6591d1;
+  }
+
+  /* Venstre side */
+  .newsletter h2 {
+    font-family: Georgia, serif;
+    font-size: 34px;
+    line-height: 1.1;
+    margin: 0 0 50px 0;
+  }
+
+  .email-box {
+    width: 490px;
+    height: 75px;
+    background-color: #6d0005;
+    border-radius: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    color: white;
+    font-family: Georgia, serif;
+    font-size: 32px;
+    padding-left: 25px;
+    box-sizing: border-box;
+  }
+
+  .email-box button {
+    width: 75px;
+    height: 75px;
+    border: none;
+    border-radius: 50%;
+
+    background-color: #a3bee7;
+    color: #030303;
+
+    font-size: 55px;
+    line-height: 1;
+  }
+
+  .instagram {
+    margin-top: 65px;
+  }
+
+  .instagram p {
+    font-size: 30px;
+    margin: 0 0 5px 0;
+  }
+
+  .instagram strong {
+    font-size: 30px;
+    color: #640c0c;
+  }
+
+  /* Højre side */
+  .location {
+    width: 300px;
+    margin-right: 40px;
+  }
+
+  .find-us {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .find-us h2 {
+    font-family: Georgia, serif;
+    font-size: 28px;
+    line-height: 1.1;
+  }
+
+  .find-os img {
+    width: 200px;
+  }
+
+  .location p {
+    font-family: Georgia, serif;
+    font-size: 26px;
+    margin-top: 20px;
+  }
+
+  /* Nederste del */
+  .footer-bottom {
+    height: 205px;
+
+    display: flex;
+    align-items: center;
+    gap: 75px;
+
+    padding: 0 65px;
+    box-sizing: border-box;
+  }
+
+  .footer-logo {
+    width: 145px;
+    height: 115px;
+    object-fit: contain;
+  }
+
+  .footer-bottom h1 {
+    font-family: "Sekuya";
+    font-size: 4.5rem;
+    color: #721717;
+    margin: 0;
+    letter-spacing: 2px;
+  }
+}
+@media (max-width: 768px) {
+  .footer-top {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .newsletter,
+  .location {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .email-box {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .footer-bottom {
+    flex-wrap: wrap;
+    height: auto;
+    min-height: 200px;
+    padding: 30px 20px;
+  }
+}

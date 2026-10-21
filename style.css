@@ -1,0 +1,304 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.sekuya-regular {
+  font-family: "Sekuya", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+body {
+  background-color: #e1edff;
+}
+
+header {
+  z-index: 100;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #98b6e5;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+
+  .logo img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+a {
+  color: #741313;
+  font-weight: 500;
+  align-self: auto;
+}
+footer {
+  color: #741313;
+  padding: 2%;
+  background-color: #98b6e5;
+  font: size 1rem;
+  height: auto;
+}
+
+.footer-logo {
+  width: 100%;
+}
+
+.footer-p {
+  color: rgb(7, 7, 7);
+  font-size: 1.3rem;
+  font-weight: 200;
+}
+.adresse {
+  width: 250px;
+  align-self: right;
+  position: center;
+}
+
+.grid-footer {
+  font-size: 1.2rem;
+  color: black;
+}
+
+.emaillink {
+  background-color: #751313;
+  color: lightpink;
+  font-weight: bold;
+  font-style: initial;
+  font-size: 1.1rem;
+  border: 1.5px solid #741313;
+  padding-inline: 3rem;
+  padding-block: 1rem;
+  padding-right: 15%;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 2rem;
+  border-radius: 20px;
+  margin: bottom 2rem;
+  display: block;
+  width: fit-content;
+  margin-bottom: 2rem;
+}
+
+.test1 {
+  background-color: #98b6e5;
+}
+
+.melddigtil {
+  color: #751313;
+  font-size: small;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  background-color: #c6daf9;
+}
+
+footer {
+  background-color: #98b6e5;
+  width: 100%;
+}
+.prislistebaggrund {
+  background-color: #180707;
+}
+
+.bestiltidlink {
+  background-color: #751313;
+  color: lightpink;
+  font-weight: bold;
+  font-style: initial;
+  font-size: 1.1rem;
+  border: 1.5px solid #741313;
+  padding-inline: 3rem;
+  padding-block: 1rem;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 2rem;
+  border-radius: 20px;
+  margin: bottom 2rem;
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.div-tekst {
+  line-height: 2rem;
+}
+h1 {
+  font-size: 3.5rem;
+  color: #751313;
+  font-weight: 600;
+  padding: 0.5rem;
+  font-family: "Sekuya";
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: #98b6e5;
+  padding: 1rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-family: "Yellowtail";
+}
+
+video {
+  margin-left: 170px;
+  margin-bottom: 2rem;
+  transform: rotate(-10deg);
+  border: 0.5rem solid #751313;
+}
+.khtekst {
+  font-size: 1.5rem;
+  color: #98b6e5;
+  font-family: "Yellowtail";
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+.logotekst {
+  font-size: 1.2rem;
+  text-align: left;
+  font-weight: 0.5rem;
+}
+.navn {
+  color: #98b6e5;
+  font-style: italic;
+}
+
+.forsideh2 {
+  text-align: start;
+  margin-top: 4rem;
+}
+p {
+  font-size: 1.7rem;
+  padding: 1rem;
+  color: #751313;
+  font-weight: 400;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.bestille-foto {
+  background-image: url("./img/vente-foto.jpg");
+  background: size 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 80%;
+  background-color: #98b6e5;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+
+  @media (width < 800px) {
+    &.active .menu {
+      display: block;
+      background-color: #98b6e5;
+      position: absolute;
+      top: 94px;
+      left: 0;
+      width: 100%;
+      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+      z-index: 1;
+    }
+
+    &.active .menu li {
+      margin: 10px 20px;
+    }
+
+    &.active .menu a {
+      font-size: 24px;
+    }
+  }
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    margin-right: 20px;
+  }
+
+  li:last-child {
+    margin-right: 0;
+  }
+
+  a {
+    display: block;
+    padding: 10px;
+    color: #741313;
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: color 0.3s;
+    text-align: end;
+    &:hover {
+      color: #f45abe;
+    }
+  }
+  @media (width < 800px) {
+    display: none;
+  }
+}
+
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  display: none;
+
+  .line {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #751313;
+    margin-bottom: 5px;
+    transition: 0.2s linear;
+  }
+
+  @media (width < 800px) {
+    display: block;
+    background-color: transparent;
+    border: 0;
+
+    &.active .line:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+      transition: 0.2s linear;
+    }
+
+    &.active .line:nth-child(2) {
+      opacity: 0;
+      transition: 0.15s linear;
+    }
+
+    &.active .line:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
+      transition: 0.2s linear;
+    }
+  }
+}
+
+/*******menu*********/
+
+/********classes***********/
+
+/******tekster*******/
